@@ -86,5 +86,4 @@ def send_exploit_request():
     s.close()
 
 if __name__ == "__main__": 
-
     send_exploit_request()
