@@ -8,7 +8,7 @@ try:
   port = 9121
   size = 1000
 
-  # badchars found:
+  # badchars found: 
   # \x00
   # \x02
   # \x0a
